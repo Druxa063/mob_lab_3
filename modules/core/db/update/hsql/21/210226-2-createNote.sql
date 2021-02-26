@@ -1,0 +1,2 @@
+alter table MOBLAB3_NOTE add constraint FK_MOBLAB3_NOTE_ON_USER_NAME foreign key (USER_NAME) references MOBLAB3_USER(ID);
+create index IDX_MOBLAB3_NOTE_ON_USER_NAME on MOBLAB3_NOTE (USER_NAME);

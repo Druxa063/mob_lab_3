@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://noteEdit.caption"
+        focusComponent="form"
+        messagesPack="com.company.moblab3.web.screens.note">
+    <data>
+        <instance id="noteDc"
+                  class="com.company.moblab3.entity.Note">
+            <view extends="_local"/>
+            <loader/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="noteDc">
+            <column width="350px">
+                <textField id="nameField" property="name"/>
+                <textField id="descriptionField" property="description"/>
+                <textField id="priorityField" property="priority"/>
+                <dateField id="dateField" property="date"/>
+            </column>
+        </form>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
+    </layout>
+</window>
