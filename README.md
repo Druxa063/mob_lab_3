@@ -6,5 +6,5 @@
 
 ## Результат
 
-![List users](https://github.com/Druxa063/mob_lab_3/images/users.png)
-![List notes](https://github.com/Druxa063/mob_lab_3/images/notes.png)
+![List users](https://github.com/Druxa063/mob_lab_3/blob/master/images/users.png)
+![List notes](https://github.com/Druxa063/mob_lab_3/blob/master/images/notes.png)
